@@ -1,0 +1,104 @@
+<!--表格標題-->
+<table>
+    <tr> <!--table row: 標記每一列的起始-->
+        <th></th> <!--占了一個column，為了與資料對齊-->
+        <th scope="col">Saturday</th> <!--table heading:表格標題:預設是col，必要時可改為row-->
+        <th scope="col">Sunday</th>
+    </tr>
+
+    <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>33</td> <!--table data: 表格資料-->
+        <td>222</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Total:</th>
+        <td>$330</td>
+        <td>$2220</td>
+    </tr>
+</table>
+
+<!--跨欄-->
+<table>
+    <tr>
+        <th></th>
+        <th>Warriors</th>
+        <th>Lakers</th>
+        <th>BULLUS</th>
+        <th>Clippers</th>
+    </tr>
+
+    <tr>
+        <th>Champion</th>
+        <td colspan="2">10</td>
+        <td>1</td>
+        <td>1</td> 
+    </tr>
+
+    <tr>
+        <th>MVP</th>
+        <td colspan="3">5</td>
+        <td>1</td>
+    </tr>
+</table>
+
+<!--跨列-->
+<table border="2" bgcolor="#efefef"> <!--邊框、背景-->
+    <tr>
+        <th></th>
+        <th>ABC</th>  
+        <th>BBC</th>
+        <th>CNN</th>
+    </tr>
+    <tr>
+        <th scope="row">6pm - 7 pm</th>
+        <td rowspan="2">Movie</td>
+        <td>NBA</td>
+        <td>NBA Final</td>
+    </tr>
+    <tr>
+        <th scope="row">7pm - 9pm</th>
+        <td>Sport</td>
+        <td>baseball</td>
+    </tr>
+</table>
+
+<!--長表格-->
+<table width="400" cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef"> <!--寬度、間距調整-->
+    <thrad>
+        <tr>
+            <th>Data</th>
+            <th>Income</th>
+            <th>Expenditure</th>
+        </tr>
+    </thrad>
+
+    <tbody>
+        <tr>
+            <th>1st January</th>
+            <td>250</td>
+            <td>36</td>
+        </tr>
+
+        <tr>
+            <th>2nd January</th>
+            <td>350</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <th>3rd January</th>
+            <td>50</td>
+            <td>56</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td></td>
+            <td>650</td>
+            <td>98</td>
+        </tr>
+    </tfoot>
+</table>

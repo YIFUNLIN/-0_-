@@ -1,0 +1,72 @@
+<!--帳密輸入框-->
+<form action = "login.php">
+    <p>Username:
+        <input type="text" name="username" size= "15" maxlength="30" />
+    </p>
+
+    <p>Password:
+        <input type="password" name="password" size= "15" maxlength="30" />
+    </p>
+</form>
+
+<!--留言輸入框-->
+<form action = "comments.php">
+    <p>What did you think? </p>
+    <textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
+</form>
+
+<!--選取方塊-->
+<form action = "choose.php">
+    <p>What is your most favorite NBA teams? 
+        <br/>
+        <input type="radio" name="team" value = 'warriors' checked = 'checked' /> Warriors <!--只能單選-->
+        <input type="radio" name="team" value = 'LA' checked="checked"/>LA  
+    </p>
+    
+    <!--勾選框:可多選-->
+    <p>Please choose one
+    <br/>
+    <input type="checkbox" name="country" value = 'Taiwan' checked="checked"/>Taiwan
+    <input type="checkbox" name="country" value = 'US' checked="checked"/>US
+    </p>
+
+    <!--下拉式選單-->
+    <p>Please choose MVP
+    <br/>
+    <select name = 'MVP'>
+        <option value = 'Curry'>Curry</option>
+        <option value = 'LBJ'>LBJ</option>
+    </select>
+
+    <!--多重選擇區塊-->
+    <p>Please select three MVPs
+        <br/>
+        <select name = 'ss' size="3" multiple="multiple">
+            <option value = 'Curry' selected="selected">Curry</option>
+            <option value = 'LBJ' selected = 'selected'>LBJ</option>
+            <option value = 'westbrook' selected = 'selected'>westbrook</option>
+            <option value = 'Rose' selected = 'selected'>Rose</option>
+            <option value = 'D77'>D77</option>
+        </select>
+</form>
+
+<form action="upload.php" method="post">
+    <p>Upload your file:</p>
+    <input type="file" name="profile" /><br/>
+    <input type="submit" value="upload" />
+</form>
+
+<!--集群表單內容-->
+<fieldset>
+    <legend>Warriors</legend>
+    <label>Email: <br/>
+        <input type="text" name="email" /></label ><br/>
+    <label>Mobile: <br/>
+        <input type="text" name="mobile" /></label ><br/>
+</fieldset>
+
+<form action="search.php">
+    <p>Search</p>
+    <input type="search" name="search" />
+    <input type="submit" value="Search" />
+</form>

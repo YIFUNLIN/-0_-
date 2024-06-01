@@ -1,0 +1,15 @@
+
+p.one {
+    border-width: 2px;
+    border-style: solid; /* 必須設定邊框樣式以使邊框可見 */
+}
+
+p.two {
+    border-width: thick;
+    border-style: solid; /* thick 通常等於 5px */
+}
+
+p.three {
+    border-width: 1px 4px 12px 4px;
+    border-style: solid; /* 四個方向各不同的邊框寬度 */
+}
