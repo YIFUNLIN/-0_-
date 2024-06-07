@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style type="text/css">
+        div {
+            border-bottom: 1px solid #efefef;
+            margin: 10px;
+            padding-bottom: 10px;
+            width: 260px;
+        }
+        .title{
+            float:left;
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .radio-buttons label {
+            float: none;
+        }
+        .submit {
+            text-align: right;
+        }
+
+        </style>
+    </head>
+        <body>
+            <form action="sign.php" method="post">
+                <div>
+                    <label for="name" class = 'title'>Name:</label>
+                    <input type="text" name="name" id="name" name="name" />
+                </div>
+
+                <div>
+                    <label for = 'email' class="title">Email:</label>
+                    <input type="email" name="email" id="email" name = 'email' />
+                </div>
+
+                <div>
+                    <span class = 'title'>Gender</span>
+                    
+                    <input type = 'radio' name = 'gender' id = 'male' value="M" />
+                    <label for = 'male'>Male</label>
+
+                    <input type = 'radio' name = 'gender' id = 'female' value="F" />
+                    <label for = 'female'>Female</label>                    
+                </div>
+
+                <div>
+                <input type="submit" value="Register" id = 'submit' />
+                </div>
+            </form>
+        </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style type = "text/css">
+            body{
+                width: 750px;
+                font-family: Arial, Helvetica, sans-serif;
+                color:aqua;
+            }
+
+            h1 {
+                background-color: #efefef;
+                padding: 10px;
+            }
+            
+            p.one {   
+                width: 450px;      /*正常流向*/
+            }
+
+            p.two {
+                position: relative; /*相對定位*/
+                top: 10px;
+                left: 100px;
+            }
+
+            p.three {
+                position: absolute; /*絕對定位*/
+                top: 0px;
+                left: 800px;
+                width: 250px;
+            }
+
+            p.four {                /*固定定位*/
+                position: fixed;
+                top: 0px;
+                left: 50px;
+                padding: 10px;
+                margin: 0px;
+                width: 100%;
+                background-color: #efefef;
+            }
+
+            h.five {               /*重疊元素*/
+                position: fixed;
+                top: 0px;
+                left: 50px;
+                padding: 10px;
+                margin: 0px;
+                width: 100%;
+                background-color: #efefef;
+            }
+
+            blockquote {          /*浮動元素*/
+                float: right;
+                width: 275px;
+                font-size: 130%;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 0px 0px 10px 10px;
+                border-top: 1px solid #665544;
+                border-bottom: 1px solid #665544;;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>NVIDIA NIM for optimized AI inference</h1> 
+        <p class="one">NVIDIA NIM is designed to bridge the gap between the complex world of AI development and the 
+        operational needs of enterprise environments, enabling 10-100X more enterprise application developers
+         to contribute to AI transformations of their companies.
+        </p>
+
+        <p class = 'two'>
+            NIM is built for portability and control, enabling model deployment across various infrastructures, 
+            from local workstations to cloud to on-premises data centers. This includes NVIDIA DGX, NVIDIA DGX 
+            Cloud, NVIDIA Certified Systems, NVIDIA RTX workstations and PCs.
+        </p>
+
+        <p class = three>
+            Hiㄏㄏ ㄏㄏㄏㄏ
+        </p>
+
+        <p class = 'four'>
+            Developers can access AI models 
+        </p>
+
+        <h class = five>NVIDIA</h>
+        
+        <blockquote>Run on optimized inference engines </blockquote>  
+
+    </body>
+</html>
